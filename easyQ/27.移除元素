@@ -1,8 +1,9 @@
+/双指针 快指针寻找要留下来的数 慢指针保存留下来的数
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
         int slow = 0;
-        for(int fast = 0; fast < nums.size(); ++fast){
+        for(int fast = 0; fast < nums.size(); ++fast){ 
             if(val != nums[fast]){
                 nums[slow++] = nums[fast];
             }
